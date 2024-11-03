@@ -1,0 +1,107 @@
+#main-header {
+    color: darkblue;
+    font-size: 36px;
+    text-align: center;
+
+nav ul{
+    list-style: none;
+   display: flex;
+   margin: 15px;
+}
+}
+
+
+
+#ancient-greece {
+    background-color: lightgray;
+    padding: 20px;
+
+    .art-title {
+        font-weight: bold;
+        color: darkgreen;
+        font-style: italic;
+    }
+
+    blockquote {
+        font-style: italic;
+        color:darkgrey
+        border-left: 5px; 
+        border-color: darkblue;
+        padding: 10px 10px;
+
+    }
+}
+
+
+
+#ancient-rome {
+    background-color: lightgray;
+    padding: 20px;
+}
+
+#renaissance {
+    background-color: lightgray;
+    padding: 20px;
+}
+
+#baroque {
+    background-color: lightgray;
+    padding: 20px;
+}
+
+#modernism {
+    background-color: lightgray;
+    padding: 20px;
+}
+
+.roman-styles{
+    ul{
+        list-style: square;
+        color: darkred;
+        font-size: 18px;
+    }
+}
+
+
+#renaissance {
+    .artist {
+        text-transform: uppercase;
+        color: darkmagenta;
+        text-decoration: underline;
+    }
+
+}
+
+#modernism{
+    .art-movements{
+        ul{
+            color: darkorange;
+            font-weight: 700;
+            font-weight: bold;
+            background-color: lightyellow;
+        }
+    }
+}
+
+
+#main-footer{
+    a {
+        color: teal;
+        text-decoration: none;
+    }
+    a:hover {
+        color: lightblue;  
+
+}
+}
+ 
+
+h2 {
+    font-size: 28px;
+    color: deeppink;
+    border: 2px; border-color: lightgrey;
+
+
+
+}
+
