@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Event - Admin</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="announcements.html">Announcements</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Admin Panel</h2>
+            <form id="adminLogin">
+                <label for="password">Admin Password:</label>
+                <input type="password" id="password" required>
+                <button type="submit">Login</button>
+                <p id="loginMessage"></p>
+            </form>
+
+            <div id="adminSchedule" style="display: none;">
+                <h3>Update Schedule</h3>
+                <form id="scheduleForm">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" required>
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" required>
+                    <label for="teams">Teams:</label>
+                    <input type="text" id="teams" required>
+                    <label for="venue">Venue:</label>
+                    <input type="text" id="venue" required>
+                    <button type="submit">Add to Schedule</button>
+                </form>
+
+                <h3>Schedule Table</h3>
+                <table id="scheduleTable">
+                    <tr>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Teams</th>
+                        <th>Venue</th>
+                        <th>Actions</th>
+                    </tr>
+                    <!-- Dynamic rows will be appended here -->
+                </table>
+            </div>
+
+            <div id="adminActions" style="display: none;">
+                <h3>Manage Scores</h3>
+                <form id="adminScoreForm">
+                    <label for="adminTeams">Teams:</label>
+                    <input type="text" id="adminTeams" required>
+                    
+                    <label for="adminScore">Score:</label>
+                    <input type="text" id="adminScore" required>
+                    
+                    <button type="submit">Add/Update Score</button>
+                </form>
+
+                <h3>Current Matches</h3>
+                
+                <table id="scoreTable">
+                    <!-- Dynamic Table Content -->
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Sports Event © 2024</p>
+    </footer>
+
+
+
+
+
+</body>
+</html>
